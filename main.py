@@ -38,7 +38,7 @@ tbl_name = 'pokemon-table'
 client = boto3.client('dynamodb',
     aws_access_key_id=os.environ.get('AWS_ACCESS_KEY'),
     aws_secret_access_key=os.environ.get('AWS_SECRET_KEY'),
-    aws_session_token=os.environ.get('AWS_SESSION_KEY'),  # Default to None if not present
+    aws_session_token=os.environ.get('AWS_SESSION_KEY'), 
     region_name=os.environ.get('AWS_REGION')
 )
 
