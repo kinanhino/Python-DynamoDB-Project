@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import os
 from dotenv import load_dotenv
 import random
@@ -75,7 +73,6 @@ try:
         }
     )
     
-    # Use a waiter to wait for table creation to complete
     waiter = client.get_waiter('table_exists')
     waiter.wait(TableName=tbl_name)
     print(f"Table {tbl_name} created successfully!")
